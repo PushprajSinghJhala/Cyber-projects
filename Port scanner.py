@@ -1,5 +1,5 @@
 import socket
-
+# short ans simple port scanner in python
 def scan_port(target, port):
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -16,3 +16,4 @@ port_range = range(200)
 
 for port in port_range:
     scan_port(target_ip, port)
+
